@@ -1,3 +1,4 @@
+/* collor pallete */
 .pal{
 color: 
 #ffb703, 
@@ -6,11 +7,14 @@ color:
 #023047
 #8ECAE6
 }
+/* button for extra info on projects */
 .btn{
     background-color:  #002916;
     color: #FFB703;
     border-color: #FFB703;
 }
+
+
 .centerAlign
 {
     text-align: center;
@@ -26,9 +30,10 @@ color:
     border: 40px solid #FFB703;
 }
 
+
 .headBg{
     margin: 0 auto;
-    background: #002916 ;
+    background: #FFB703 ;
     padding: 15px;
     border-radius: 50%;
     display:block;
@@ -58,3 +63,18 @@ color:
 body{
     background-color: #8ECAE6;
 }
+
+/* for main scrolling effect */
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
