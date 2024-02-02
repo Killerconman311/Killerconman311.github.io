@@ -1,0 +1,60 @@
+.pal{
+color: 
+#ffb703, 
+#002916, 
+#7fb069, 
+#023047
+#8ECAE6
+}
+.btn{
+    background-color:  #002916;
+    color: #FFB703;
+    border-color: #FFB703;
+}
+.centerAlign
+{
+    text-align: center;
+}
+
+.divider{
+    background-color: #002916;
+}
+
+
+.headShot{
+    width:65%;
+    border: 40px solid #FFB703;
+}
+
+.headBg{
+    margin: 0 auto;
+    background: #FFB703;
+    padding: 15px;
+    border-radius: 50%;
+    display:block;
+    width:35%;
+    height:35%;
+}
+
+
+.topHeader
+{
+    text-align: center;
+}
+
+
+.bio
+{
+    border-radius: 25px;
+    background-color: #023047;
+    padding: 20px;
+    width: 50%;
+    height: 50%; 
+}
+.contrastText
+{
+    color: #FFB703;
+}
+body{
+    background-color: #8ECAE6;
+}
