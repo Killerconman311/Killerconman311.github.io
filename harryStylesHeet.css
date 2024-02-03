@@ -9,12 +9,13 @@ color:
 }
 /* button for extra info on projects */
 .btn{
+    text-align: center;
     background-color:  #002916;
     color: #FFB703;
     border-color: #FFB703;
 }
 
-
+/* any text that needs cetner aligned */
 .centerAlign
 {
     text-align: center;
@@ -30,7 +31,7 @@ color:
     border: 40px solid #FFB703;
 }
 
-
+/* round background for header */
 .headBg{
     margin: 0 auto;
     background: #FFB703 ;
@@ -40,13 +41,6 @@ color:
     width:35%;
     height:35%;
 }
-
-
-.topHeader
-{
-    text-align: center;
-}
-
 
 .bio
 {
@@ -78,3 +72,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
   }
+.eleAl{
+    margin: 0 auto;
+}
