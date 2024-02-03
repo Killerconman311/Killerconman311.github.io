@@ -9,7 +9,6 @@ color:
 }
 /* button for extra info on projects */
 .btn{
-    text-align: center;
     background-color:  #002916;
     color: #FFB703;
     border-color: #FFB703;
@@ -74,4 +73,8 @@ body{
   }
 .eleAl{
     margin: 0 auto;
+}
+#video-container {
+    max-width: 60%;
+    width: 60%;
 }
