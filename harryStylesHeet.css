@@ -1,4 +1,4 @@
-/* collor pallete */
+/* color palette */
 .pal{
 color: 
 #ffb703, 
@@ -14,7 +14,7 @@ color:
     border-color: #FFB703;
 }
 
-/* any text that needs cetner aligned */
+/* any text that needs center aligned */
 .centerAlign
 {
     text-align: center;
@@ -78,3 +78,4 @@ body{
     max-width: 60%;
     width: 60%;
 }
+
