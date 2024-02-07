@@ -28,22 +28,7 @@ color:
     background-color: #002916;
 }
 
-
-.headShot{
-    width:65%;
-    border: 40px solid #FFB703;
-}
-
-/* round background for header */
-.headBg{
-    margin: 0 auto;
-    background: #FFB703 ;
-    padding: 15px;
-    border-radius: 50%;
-    display:block;
-    width:35%;
-    height:35%;
-}
+/* style stuff for bio/headshot below */
 
 .bio
 {
@@ -53,11 +38,32 @@ color:
     width: 50%;
     height: 50%; 
 }
+
+.headShot{
+    width:65%;
+    border: 40px solid #FFB703;
+}
+
+.headBg{
+    margin: 0 auto;
+    background: #FFB703 ;
+    padding: 15px;
+    border-radius: 50%;
+    display:block;
+    width:35%;
+    height:35%;
+}
+.bioPad{
+    padding: 60px;
+}
+
+
+
 .contrastText
 {
     color: #FFB703;
 }
-body{
+body{ 
     background-color: #8ECAE6;
     margin: 0 auto;
     padding: 0;
@@ -68,7 +74,7 @@ body{
     background-image: url("landscapeBlur.jpg");
   
     /* Set a specific height */
-    min-height: 900px; 
+    min-height: 1000px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -92,8 +98,19 @@ body{
     padding: 20px;
 }
 
+/* video text */
 .videoCap{
     color: black;
 }
 
+/* drop shadow for elements on parralax */
+.paraBack{
+    padding: 0px;
+    box-shadow: 8px 5px 7px 6px black;
+}
+/* drop shadow for BLACK elements on parralax */
+.paraBackW{
+    padding: 0px;
+    box-shadow: 4px 3px 10px 2px white;
+}
  
