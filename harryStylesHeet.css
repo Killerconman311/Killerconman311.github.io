@@ -60,27 +60,41 @@ color:
 body{
     background-color: #8ECAE6;
 }
-
 /* for main scrolling effect */
 .parallax {
     /* The image used */
-    background-image: url("img_parallax.jpg");
+    background-image: url("landscapeBlur.jpg");
   
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 900px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
   }
 .eleAl{
     margin: 0 auto;
 }
+/* first Raven Trailer */
 #video-container {
     max-width: 60%;
     width: 60%;
+}
+/* Remove default margin and padding */
+body{
+    margin: 0 auto;
+    padding: 0;
+  }
+.contWide{
+    width: 100%; /* Take up full width of viewport */
+    padding: 20px;
+}
+
+.videoCap{
+    color: black;
 }
 
  
