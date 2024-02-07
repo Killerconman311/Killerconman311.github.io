@@ -59,6 +59,8 @@ color:
 }
 body{
     background-color: #8ECAE6;
+    margin: 0 auto;
+    padding: 0;
 }
 /* for main scrolling effect */
 .parallax {
@@ -84,10 +86,7 @@ body{
     width: 60%;
 }
 /* Remove default margin and padding */
-body{
-    margin: 0 auto;
-    padding: 0;
-  }
+
 .contWide{
     width: 100%; /* Take up full width of viewport */
     padding: 20px;
