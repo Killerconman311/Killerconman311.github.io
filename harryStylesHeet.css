@@ -1,124 +1,150 @@
 /* color palette */
-.pal{
-color: 
-#ffb703, 
-#002916, 
-#7fb069, 
-#023047
-#8ECAE6
+.pal {
+    color:
+        #ffb703,
+        #002916,
+        #7fb069,
+        #023047 #8ECAE6
 }
+
 /* button for extra info on projects */
-.btn{
-    background-color:  #002916;
+.btn {
+    background-color: #002916;
     color: #FFB703;
     border-color: #FFB703;
 }
 
 /* any text that needs center aligned */
-.centerAlign
-{
+.centerAlign {
     text-align: center;
 }
+.leftAlign
+{
+    text-align: left;
+}
+
 /* center align non-text */
-.divCenter{
+.divCenter {
     margin: 0 auto;
 }
 
-.divider{
+.divider {
     background-color: #002916;
 }
 
 /* style stuff for bio/headshot below */
 
-.bio
-{
+.bio {
     border-radius: 25px;
     background-color: #023047;
     padding: 20px;
     width: 50%;
-    height: 50%; 
+    height: 50%;
 }
 
-.headShot{
-    width:65%;
+.headShot {
+    width: 65%;
     border: 40px solid #FFB703;
 }
 
-.headBg{
+.headBg {
     margin: 0 auto;
-    background: #FFB703 ;
+    background: #FFB703;
     padding: 15px;
     border-radius: 50%;
-    display:block;
-    width:35%;
-    height:35%;
+    display: block;
+    width: 35%;
+    height: 35%;
 }
-.bioPad{
+
+.bioPad {
     padding: 60px;
 }
 
 
 
-.contrastText
-{
+.contrastText {
     color: #FFB703;
 }
-body{ 
+
+body {
     background-color: #8ECAE6;
     margin: 0 auto;
     padding: 0;
 }
+
 /* for main scrolling effect */
 .parallax {
     /* The image used */
     background-image: url("landscapeBlur.jpg");
-  
+
     /* Set a specific height */
-    min-height: 1000px; 
-  
+    min-height: 1000px;
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-  }
-.eleAl{
+}
+
+.eleAl {
     margin: 0 auto;
 }
+
 /* first Raven Trailer */
 #video-container {
     max-width: 60%;
     width: 60%;
 }
+
 /* Remove default margin and padding */
 
-.contWide{
-    width: 100%; /* Take up full width of viewport */
+.contWide {
+    width: 100%;
+    /* Take up full width of viewport */
     padding: 20px;
 }
 
 /* video text */
-.videoCap{
+.videoCap {
     color: black;
 }
 
 /* drop shadow for elements on parralax */
-.paraBack{
+.paraBack {
     padding: 0px;
     box-shadow: 8px 5px 7px 6px black;
 }
+
 /* drop shadow for BLACK elements on parralax */
-.paraBackW{
+.paraBackW {
     padding: 0px;
     box-shadow: 4px 3px 10px 2px white;
 }
+
 /* transition gradients for sections */
 #grad {
     height: 100px;
-    background-image: linear-gradient(0deg, rgba(0,0,0,1), rgba(0, 0, 0, 0));
-  }
-  #gradFlip {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#gradFlip {
     height: 100px;
-    background-color:(180deg, rgba(0,0,0,1), rgba(0, 0, 0, 0));
-  }
+    background-color: (180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/* color for dividers */
+hr {
+    height: 3px;
+    color: #FFB703;
+    background-color: #FFB703; 
+    
+}
+.hrH {
+    height: 3px;
+    color: #FFB703;
+    background-color: #FFB703;
+    width:48%; 
+}
