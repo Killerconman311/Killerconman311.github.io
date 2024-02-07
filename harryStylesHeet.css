@@ -113,3 +113,12 @@ body{
     padding: 0px;
     box-shadow: 4px 3px 10px 2px white;
 }
+/* transition gradients for sections */
+#grad {
+    height: 100px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1), rgba(0, 0, 0, 0));
+  }
+  #gradFlip {
+    height: 100px;
+    background-color:(180deg, rgba(0,0,0,1), rgba(0, 0, 0, 0));
+  }
