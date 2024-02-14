@@ -34,12 +34,19 @@
 
 /* style stuff for bio/headshot below */
 
-.bio {
+/* .bio {
     border-radius: 25px;
     background-color: #023047;
     padding: 20px;
     width: 50%;
     height: 50%;
+} */
+.bio {
+    border-radius: 25px;
+    background-color: #023047;
+    padding: 20px;
+    height: 50%;
+    width: 100%; /* Add this line */
 }
 
 .headShot {
@@ -47,15 +54,54 @@
     border: 40px solid #FFB703;
 }
 
+/* .headBg {
+    margin: 0 auto;
+    background: #FFB703;
+    padding: 15px;
+    border-radius: 50%;
+    display: block; 
+     width: 35%;
+    height: 35%; 
+     margin: 0 auto;
+    background: #FFB703;
+    padding: 15px;
+}  */
 .headBg {
     margin: 0 auto;
     background: #FFB703;
     padding: 15px;
     border-radius: 50%;
-    display: block;
-    width: 35%;
-    height: 35%;
+    display: block; 
+    width: 100%; /* Add this line */
+    height: 35%; 
+    margin: 0 auto;
+    background: #FFB703;
+    padding: 15px;
 }
+ .headBg img {
+    border-radius: 50%;
+}
+@media (min-width: 768px) {
+    .bio, .headBg {
+        width: 50%;
+    }
+    .bio{
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+    .headBg {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+}
+.headBg {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 
 .bioPad {
     padding: 60px;
