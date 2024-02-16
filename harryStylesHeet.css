@@ -18,16 +18,10 @@
 .centerAlign {
     text-align: center;
 }
-.leftAlign
-{
+
+.leftAlign {
     text-align: left;
 }
-
-/* center align non-text */
-.divCenter {
-    margin: 0 auto;
-}
-
 
 /* style stuff for bio/headshot below */
 
@@ -36,61 +30,62 @@
     background-color: #023047;
     padding: 20px;
     height: 50%;
-    width: 100%; 
+    width: 100%;
+}
+.bioPad {
+    padding: 60px;
 }
 
-.headShot {
-    width: 65%;
-    border: 40px solid #FFB703;
+.overlord{
+    padding:10%
 }
-
 
 .headBg {
     margin: 0 auto;
-    background: #FFB703;
     padding: 15px;
     border-radius: 50%;
-    display: block; 
-    width: 100%; 
-    height: 35%; 
-    margin: 0 auto;
+    /* display: block; */
+    width: 100%;
+    height: 35%;
     background: #FFB703;
-    padding: 15px;
-}
- .headBg img {
-    border-radius: 50%;
-}
-@media (min-width: 768px) {
-    .bio, .headBg {
-        width: 50%;
-    }
-    .bio{
-        width: calc(50% - 20px);
-        margin-left: 20px;
-    }
-    .headBg {
-        width: calc(50% - 20px);
-        margin-right: 20px;
-    }
-}
-.headBg {
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-
-.bioPad {
-    padding: 60px;
+.headBg img {
+    width: 100%;
+  height: auto;
+    
 }
+
+@media (min-width: 768px) {
+
+    .bio,
+    .headBg {
+        width: 50%;
+    }
+
+    .bio {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+
+    .headBg {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+}
+
+
 
 
 /* general text things */
 .contrastText {
     color: #FFB703;
 }
+
 /* video text */
 .videoCap {
     color: black;
@@ -117,6 +112,7 @@ body {
     background-size: cover;
 
 }
+
 /* drop shadow for elements on parralax */
 .paraBack {
     padding: 0px;
@@ -129,19 +125,9 @@ body {
     box-shadow: 4px 3px 2px 2px white;
 }
 
-.eleAl {
-    margin: 0 auto;
-}
-
-
-
-
-
 /* first Raven Trailer */
 #video-container {
     display: inline-block;
-    /* max-width: 60%;
-    width: 60%; */
 }
 
 /* Remove default margin and padding */
@@ -171,14 +157,15 @@ body {
 hr {
     height: 3px;
     color: #FFB703;
-    background-color: #FFB703; 
-    
+    background-color: #FFB703;
+
 }
+
 .hrH {
     height: 3px;
     color: #FFB703;
     background-color: #FFB703;
-    width:48%; 
+    width: 48%;
 }
 
 /* Raven Stuff */
@@ -187,49 +174,58 @@ hr {
     background-color: #023047;
     padding: 15px;
 }
+
 .textR {
     color: #FFB703;
-    font-size: 20px;
+    font-size: 18px;
 }
+
 .bodyR {
     background-color: #8ECAE6;
 }
-.spaceR{
+
+.spaceR {
     padding-top: 75px;
 }
+
 .topSec {
     position: relative;
     /* other styles */
-  }
+}
+
 .topSec::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20%; 
+    height: 20%;
     background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
-  }
-  .botSec {
+}
+
+.botSec {
     position: relative;
     /* other styles */
-  }
-  
-  .botSec::before {
+}
+
+.botSec::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 20%; 
+    height: 20%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  }
-  .gap{
+}
+
+.gap {
     height: 120px;
     background-color: black;
-  }
-  .centerR {
+}
+
+.centerR {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
