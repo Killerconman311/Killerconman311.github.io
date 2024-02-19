@@ -8,6 +8,8 @@
 }
 body {
     background-image: url("projectbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
     padding: 0;
 }
@@ -27,8 +29,11 @@ body {
 .leftAlign {
     text-align: left;
 }
+#title{
+    color: #023047;
+}
 
-/* style stuff for bio/headshot below */
+/* containers for sections */
 
 .bio {
     border-radius: 25px;
@@ -40,30 +45,17 @@ body {
 .bioPad {
     padding: 60px;
 }
-
-.overlord{
-    padding:10%
-}
-
-.headBg {
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 50%;
-    /* display: block; */
-    width: 100%;
-    height: 35%;
-    background: #FFB703;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.headBg img {
-    width: 100%;
-  height: auto;
+.links {
+    border-radius: 25px;
+    background-color: #023047;
+    width: 50%; /* or any other percentage or pixel value */
+    margin: 0 auto; /* centers the div */
+    p{
+        color: #FFB703;
     
+    }
 }
+
 
 @media (min-width: 768px) {
 
@@ -83,11 +75,58 @@ body {
     }
 }
 
+/* color for dividers */
+hr {
+    height: 3px;
+    color: #002916;
+    background-color: #002916;
 
+}
+
+.hrH {
+    height: 3px;
+    color: #FFB703;
+    background-color: #FFB703;
+    width: 48%;
+}
 
 
 /* general text things */
 .contrastText {
     color: #FFB703;
 }
+h1{
+    color: #023047;
+}
+/* style stuff for bio/headshot below */
+#head{
+    width:10% ;
+    height: auto;
+}
 
+/* navbar stuff */
+#navBG {
+    background-color: #002916;
+}
+/* icon stuff */
+#icon{
+    color:  #FFB703;
+}
+.findMe{
+    position: relative;
+    background-color: black;
+    a{
+        font-size: 25px;
+        color: #FFB703;
+    }
+}
+/* .findMe::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
+    z-index: -1;
+} */
