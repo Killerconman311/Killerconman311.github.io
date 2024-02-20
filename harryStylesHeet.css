@@ -117,7 +117,8 @@ h1{
 
 /* navbar stuff */
 #navBG {
-    background-color: #002916;
+    background-color: #023047;
+    opacity: 90%;
 }
 /* icon stuff */
 #icon{
