@@ -9,7 +9,7 @@
 body {
     background-image: url("projectbackground.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #8ECAE6;
     margin: 0 auto;
     padding: 0;
 }
@@ -21,17 +21,7 @@ body {
     border-color: #FFB703;
 }
 
-/* any text that needs center aligned */
-.centerAlign {
-    text-align: center;
-}
 
-.leftAlign {
-    text-align: left;
-}
-#title{
-    color: #023047;
-}
 
 /* containers for sections */
 
@@ -41,6 +31,11 @@ body {
     padding: 20px;
     height: 50%;
     width: 100%;
+    img{
+        width: 15%;
+        height: auto;
+        padding: 10px;
+    }
 }
 .bioPad {
     padding: 60px;
@@ -89,13 +84,29 @@ hr {
     background-color: #FFB703;
     width: 48%;
 }
-
+.centerAl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 /* general text things */
 .contrastText {
     color: #FFB703;
 }
 h1{
+    color: #023047;
+}
+/* any text that needs center aligned */
+.centerAlign {
+    text-align: center;
+}
+
+.leftAlign {
+    text-align: left;
+}
+#title{
     color: #023047;
 }
 /* style stuff for bio/headshot below */
@@ -113,20 +124,27 @@ h1{
     color:  #FFB703;
 }
 .findMe{
-    position: relative;
     background-color: black;
     a{
         font-size: 25px;
         color: #FFB703;
     }
 }
-/* .findMe::after {
+/* .gap {
+    = position: relative; 
+    other styles
+} */
+/* .gap::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 80%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
-    z-index: -1;
-} */
+    height: 50%; /* adjust as needed */
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+} */ 
+.gap {
+    height: 100px; /* adjust as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+}
