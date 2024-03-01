@@ -88,6 +88,9 @@ h2 {
 p{
     color: #FFB703;
 }
+h3{
+    color:white;
+}
 
 .bodyR {
     background-image: url("spacebackground.jpg");
@@ -235,6 +238,11 @@ background-size: cover;
 
     }
 
+}
+/* gif settings */
+#gif{
+    width: 40%;
+    height: auto;
 }
 
 .lastSec{

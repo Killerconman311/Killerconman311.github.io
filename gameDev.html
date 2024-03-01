@@ -11,10 +11,16 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="boot.js"></script>
-    <link rel="stylesheet" href="projects.css">
     <link for font awesome>
     <script src="https://kit.fontawesome.com/9f4d57d276.js" crossorigin="anonymous"></script>
     <script src="leader-line.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="projects.css">
+    <!-- jQuery (required by Magnific Popup) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Magnific Popup JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 </head>
 
 <body class="bodyR">
@@ -74,35 +80,63 @@
     <div class="gap"></div>
     <div id="parallax2" class="container-fluid contWide botSec spaceR">
         <div>
-            <h3 class="centerAlign"> (Wake Up!) </h3>
+            &nbsp;
         </div>
         <div class="container-fluid spaceR">
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-md-4">
-                    <p class="bioG"> From my very first brainstorm I knew that it was important for users to immediately
-                        interact
-                        with quantum principles the second they got into our interactive experience. </p>
-                    <img src="MOCKUPthree.jpg" class="img-fluid">
+                    <p class="bioG"> From my very first brainstorm I knew that it was going to be important for users to
+                        immediately
+                        interact with quantum principles the second they opened the app. Interactive experiences
+                        are infinitely more rewarding when users make discoveries on their own, so I wanted to show, not
+                        tell.
+                    </p>
+                    <a href="MOCKUPthree.jpg" class="popup-link">
+                        <img src="MOCKUPthree.jpg" class="img-fluid">
+                    </a>
                 </div>
-                <div class="col-2"></div>
+                <div class="col-2">
+                    <h2 class="centerAlign"> Concept <i class="fa-solid fa-left-right"></i> Product </h2>
+                </div>
                 <div class="col-md-4">
-                    <p class="bioG"> From my very first brainstorm I knew that it was important for users to immediately
-                        interact with quantum principles the second they got into our interactive experience. </p>
-                    <img src="MOCKUP4.jpg" class="img-fluid ">
+                    <p class="bioG"> I fell in love with the idea the user being able to touch and drag the particles
+                        around the screen.
+                        My hope was that before we revealed the true nature of the story, the user would have already
+                        interacted with the particles
+                        in a way that would make the reveal feel like a "Eureka!" moment.
+                    </p>
+                    <a href="MOCKUP4.jpg" class="popup-link">
+                        <img src="MOCKUP4.jpg" class="img-fluid ">
+                    </a>
+                    
                 </div>
                 <div class="col-1"></div>
             </div>
         </div>
         &nbsp;
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <p class="bioG"> From my very first brainstorm I knew that it was important for users to immediately
-                    interact with quantum principles the second they got into our interactive experience. </p>
-                <img src="ParticleGif.gif" class="img-fluid d-block mx-auto">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="bioG"> We landed on using the main characters instead of actual sub-atomic particles to avoid
+                    being to on the nose
+                    with the subject matter. The characters (representing the particles) instantiate randomly, and upon
+                    being touched, immediately
+                    force their counterpart to mirror their own movement. This was a fun way to introduce the concept of
+                    entanglement without directly
+                    telling the user "quantum entanglement is when two particles are connected across space and time."
+                    The end goal is for the user to drag
+                    the particle-characters into the hit-box of the sleeping character in the middle 3 times, after
+                    which the main character wakes up from a dream
+                    in class, and the story begins.
+                </p>
+                <a href="ParticleGif.gif" class="popup-link">
+                    <img src="ParticleGif.gif" id="gif" class="img-fluid d-block mx-auto">
+                </a>
+                
+                
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-3"></div>
         </div>
     </div>
     </div>
@@ -333,6 +367,14 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+          $('.popup-link').magnificPopup({
+            type: 'image'
+            // other options
+          });
+        });
+        </script>
 </body>
 
 
