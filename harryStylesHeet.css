@@ -102,6 +102,9 @@ h1{
 h2{
     color: #FFB703;
 }
+h3{
+    color: white;
+}
 /* any text that needs center aligned */
 .centerAlign {
     text-align: center;
