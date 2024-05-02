@@ -113,8 +113,12 @@ h3{
 .leftAlign {
     text-align: left;
 }
-#title{
+#title {
     color: #023047;
+    text-shadow: -1px -1px 0 #FFB703,  
+                 1px -1px 0 #FFB703,
+                 -1px 1px 0 #FFB703,
+                 1px 1px 0 #FFB703;
 }
 /* style stuff for bio/headshot below */
 #head{
