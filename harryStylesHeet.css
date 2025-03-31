@@ -122,7 +122,8 @@ h3{
 }
 /* style stuff for bio/headshot below */
 #head{
-    width:10% ;
+    max-width: 300px;
+    width: 100%;
     height: auto;
 }
 
@@ -177,3 +178,17 @@ h3{
     object-fit: cover;
     object-position: left;
 }
+/* Ensure images don’t blow out of their container */
+img.img-fluid {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  
+  /* Skill icons smaller */
+  #skills {
+    max-width: 100px; /* Adjust to taste */
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
