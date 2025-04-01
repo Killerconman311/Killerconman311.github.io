@@ -104,6 +104,10 @@ h2{
 }
 h3{
     color: white;
+    text-align: center;
+}
+p{
+    color: #8ECAE6;
 }
 /* any text that needs center aligned */
 .centerAlign {
