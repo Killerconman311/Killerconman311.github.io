@@ -1,0 +1,15 @@
+{
+  "name": "04_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss dist/css/main.css",
+    "build": "sass scss/main.scss dist/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.86.3"
+  }
+}
