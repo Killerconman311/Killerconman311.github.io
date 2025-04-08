@@ -604,7 +604,8 @@ img {
   }
 
   #header-home .header-content {
-    display: none;
+    display: block;
+    color:#000
   }
 
   #header-inner {

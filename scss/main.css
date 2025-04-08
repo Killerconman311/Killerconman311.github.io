@@ -224,7 +224,7 @@ input[class^=btn-]:hover {
     background-position: 20% 30%;
   }
   #header-home .header-content {
-    display: none;
+    display: block;
   }
   #header-inner {
     height: 10rem;
