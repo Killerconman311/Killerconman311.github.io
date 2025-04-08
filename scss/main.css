@@ -302,7 +302,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #002916;
+  color: #329cff;
 }
 
 ul {
@@ -456,6 +456,8 @@ img {
 }
 #about-a .bio-image {
   grid-area: bioimage;
+  height: 50%;
+  width: auto;
 }
 #about-a .bio {
   grid-area: bio;

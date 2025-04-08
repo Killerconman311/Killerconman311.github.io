@@ -18,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  color: config.$dark-color;
+  color: #329cff;
 }
 
 ul {
@@ -223,6 +223,8 @@ img {
     // Grid Area
     .bio-image {
       grid-area: bioimage;
+      height: 50%;
+      width: auto;
     }
 
     .bio {
