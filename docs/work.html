@@ -1,204 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="./img/about.jpg" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Search Engine tags -->
-    <meta
-      name="description"
-      content="This is my personal portfolio, I am a developer"
-    />
-    <meta name="keywords" content="Connor Kindall, Ranjan Portfolio" />
-    <title>Connor Kindall | My Work | Game Developer and Designer, Web Developer, Digital Creator</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="./img/about.jpg" />
 
-    <!-- Modal CSS (if not placed in your main.css) -->
-    <style>
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed;
-        z-index: 1000; /* Sits above other content */
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-      }
-      .modal-content {
-        background: #fff;
-        margin: 10% auto;
-        padding: 20px;
-        width: 80%;
-        max-width: 500px;
-        position: relative;
-        border-radius: 5px;
-      }
-      #close {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        cursor: pointer;
-        font-size: 24px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="header-inner">
-      <div class="container">
-        <nav id="main-nav">
-          <h1>RKM</h1>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html" class="current">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Search Engine tags -->
+  <meta name="description" content="This is my personal portfolio, I am a developer" />
+  <meta name="keywords" content="Connor Kindall, Ranjan Portfolio" />
+  <title>Connor Kindall | My Work | Game Developer and Designer, Web Developer, Digital Creator</title>
 
-    <!-- Section A: Gallery -->
-    <section id="work-a" class="text-center py-3">
-      <div class="container">
-        <h2 class="section-title">My Work</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">Check out some of my projects</p>
-        <div class="items">
-          <!-- Each .item now includes a data-description attribute -->
-          <div class="item" data-description="Chase The Moon is a VR Rogue-Like made in Unity (2023-24) that immerses players in an atmospheric space adventure.">
-            <div class="item-image">
-              <img src="img/items/item1.png" alt="Chase The Moon" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <p class="item-text-category">Chase The Moon</p>
-                <h2 class="item-text-title">VR Rogue-Like</h2>
-                <p class="item-text-category">Made in Unity (2023-24)</p>
-              </div>
-            </div>
+  <!-- Modal CSS (if not placed in your main.css) -->
+  <style>
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      z-index: 1000;
+      /* Sits above other content */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent background */
+    }
+
+    .modal-content {
+      background: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 500px;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    #close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header-inner">
+    <div class="container">
+      <nav id="main-nav">
+        <h1>RKM</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html" class="current">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section A: Gallery -->
+  <section id="work-a" class="text-center py-3">
+    <div class="container">
+      <h2 class="section-title">My Work</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Check out some of my projects</p>
+      <div class="items">
+        <!-- Each .item now includes a data-description attribute -->
+        <div class="item"
+          data-description="Chase The Moon is a VR Rogue-Like made in Unity (2023-24) that immerses players in an atmospheric space adventure.">
+          <div class="item-image">
+            <img src="img/items/item1.png" alt="Chase The Moon" />
           </div>
-          <div class="item" data-description="The Talking Stick is a cooperative horror puzzle game built in Unreal (2024-25) with immersive, nerve-wracking gameplay.">
-            <div class="item-image">
-              <img src="img/items/item2.png" alt="The Talking Stick" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <p class="item-text-category">The Talking Stick</p>
-                <h2 class="item-text-title">Co-op Horror Puzzle Game</h2>
-                <p class="item-text-category">Made in Unreal (2024-25)</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-description="Entangled is an interactive comic for tablets developed in Unity (Spring 2023) that blends narrative with interactive visuals.">
-            <div class="item-image">
-              <img src="img/items/item3.png" alt="Entangled" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <p class="item-text-category">Entangled</p>
-                <h2 class="item-text-title">Interactive Comic</h2>
-                <p class="item-text-category">Made in Unity (Spring 2023)</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-description="Hulu Redesign showcases my UX/UI design skills. This project reimagines Hulu's interface for a cleaner, more engaging user experience (Fall 2023).">
-            <div class="item-image">
-              <img src="img/items/item4.png" alt="Hulu Redesign" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <p class="item-text-category">Hulu Redesign</p>
-                <h2 class="item-text-title">UX/UI Design</h2>
-                <p class="item-text-category">(Fall 2023)</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-description="Raven is a 2D Platformer and my first game development project (Fall 2022) that explores innovative level design and storytelling.">
-            <div class="item-image">
-              <img src="img/items/item5.png" alt="Raven" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <p class="item-text-category">Raven</p>
-                <h2 class="item-text-title">2D Platformer</h2>
-                <p class="item-text-category">First game-dev experience (Fall 2022)</p>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-description="AWS Alexa App is an interactive voice-controlled project using the Alexa development platform (Fall 2024).">
-            <div class="item-image">
-              <img src="img/items/item6.png" alt="AWS Alexa App" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <p class="item-text-category">AWS Alexa App</p>
-                <h2 class="item-text-title">Using Alexa Dev</h2>
-                <p class="item-text-category">(Fall 2024)</p>
-              </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Chase The Moon</p>
+              <h2 class="item-text-title">VR Rogue-Like</h2>
+              <p class="item-text-category">Made in Unity (2023-24)</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Modal Markup -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span id="close">&times;</span>
-        <div id="modal-description"></div>
+        <div class="item"
+          data-description="The Talking Stick is a cooperative horror puzzle game built in Unreal (2024-25) with immersive, nerve-wracking gameplay.">
+          <div class="item-image">
+            <img src="img/items/item2.png" alt="The Talking Stick" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">The Talking Stick</p>
+              <h2 class="item-text-title">Co-op Horror Puzzle Game</h2>
+              <p class="item-text-category">Made in Unreal (2024-25)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item"
+          data-description="Entangled is an interactive comic for tablets developed in Unity (Spring 2023) that blends narrative with interactive visuals.">
+          <div class="item-image">
+            <img src="img/items/item3.png" alt="Entangled" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Entangled</p>
+              <h2 class="item-text-title">Interactive Comic</h2>
+              <p class="item-text-category">Made in Unity (Spring 2023)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item"
+          data-description="Hulu Redesign showcases my UX/UI design skills. This project reimagines Hulu's interface for a cleaner, more engaging user experience (Fall 2023).">
+          <div class="item-image">
+            <img src="img/items/item4.png" alt="Hulu Redesign" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Hulu Redesign</p>
+              <h2 class="item-text-title">UX/UI Design</h2>
+              <p class="item-text-category">(Fall 2023)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item"
+          data-description="Raven is a 2D Platformer and my first game development project (Fall 2022) that explores innovative level design and storytelling.">
+          <div class="item-image">
+            <img src="img/items/item5.png" alt="Raven" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Raven</p>
+              <h2 class="item-text-title">2D Platformer</h2>
+              <p class="item-text-category">First game-dev experience (Fall 2022)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item"
+          data-description="AWS Alexa App is an interactive voice-controlled project using the Alexa development platform (Fall 2024).">
+          <div class="item-image">
+            <img src="img/items/item6.png" alt="AWS Alexa App" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">AWS Alexa App</p>
+              <h2 class="item-text-title">Using Alexa Dev</h2>
+              <p class="item-text-category">(Fall 2024)</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-      <div class="footer-content container">
-        <div class="social">
-          <a href="https://www.linkedin.com/in/connor-kindall/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/Killerconman311">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+  <!-- Modal Markup -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <div id="modal-description"></div>
+    </div>
+  </div>
+  <!-- Section B: Progress Bars -->
+  <section id="about-b" class="bg-dark py-3">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="bottom-line"></div>
+      <h4>Unity</h4>
+      <div class="progress">
+        <div style="width: 100%"></div>
       </div>
-    </footer>
-    <script>
-      // Select all grid items
-      document.querySelectorAll('.item').forEach(function(item) {
-        item.addEventListener('click', function() {
-          // Get the description from the data attribute
-          var description = this.getAttribute('data-description');
-          // Set the modal content
-          document.getElementById('modal-description').textContent = description;
-          // Show the modal
-          document.getElementById('modal').style.display = 'block';
-        });
-      });
-    
-      // Close modal when the close button is clicked
-      document.getElementById('close').addEventListener('click', function() {
-        document.getElementById('modal').style.display = 'none';
-      });
-    
-      // Close modal if the user clicks outside the modal content
-      window.addEventListener('click', function(event) {
-        var modal = document.getElementById('modal');
-        if (event.target === modal) {
-          modal.style.display = 'none';
-        }
-      });
-    </script>
-  </body>
+      <h4>Unreal Engine</h4>
+      <div class="progress">
+        <div style="width: 85%"></div>
+      </div>
+      <h4>C#/C++</h4>
+      <div class="progress">
+        <div style="width: 75%"></div>
+      </div>
+      <h4>Full Stack</h4>
+      <div class="progress">
+        <div style="width: 70%"></div>
+      </div>
+      <h4>Adobe Suite</h4>
+      <div class="progress">
+        <div style="width: 90%"></div>
+      </div>
+      <h4>Database Management</h4>
+      <div class="progress">
+        <div style="width: 70%"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/connor-kindall/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Killerconman311"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  // Select all grid items
+  document.querySelectorAll('.item').forEach(function (item) {
+    item.addEventListener('click', function () {
+      // Get the description from the data attribute
+      var description = this.getAttribute('data-description');
+      // Set the modal content
+      document.getElementById('modal-description').textContent = description;
+      // Show the modal
+      document.getElementById('modal').style.display = 'block';
+    });
+  });
+
+  // Close modal when the close button is clicked
+  document.getElementById('close').addEventListener('click', function () {
+    document.getElementById('modal').style.display = 'none';
+  });
+
+  // Close modal if the user clicks outside the modal content
+  window.addEventListener('click', function (event) {
+    var modal = document.getElementById('modal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+</body>
+
 </html>
