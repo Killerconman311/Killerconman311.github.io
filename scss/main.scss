@@ -396,3 +396,17 @@ img {
     }
   }
 }
+/* Disable the forced aspect ratio for the header image */
+.header-item .item-image::before {
+  display: none;
+}
+
+/* Override the absolute positioning and sizing for the header image */
+.header-item .item-image img {
+  position: static;  /* Remove absolute positioning */
+  width: auto;       /* Use the image’s natural width */
+  max-width: 300px;  /* Or a fixed size you prefer */
+  height: auto;
+  margin: 0 auto;    /* Optionally center the image */
+}
+
