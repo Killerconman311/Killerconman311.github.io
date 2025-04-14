@@ -1,265 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./img/about.jpg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="icon" href="./img/about.jpg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
+    <!-- Search Engine tags -->
+    <meta name="description" content="This is my personal portfolio, I am a developer" />
+    <meta name="keywords" content="Connor Kindall, Ranjan Portfolio" />
+    <title>Connor Kindall | My Work | Game Developer and Designer, Web Developer, Digital Creator</title>
 
-  <!-- Search Engine tags -->
-  <meta name="description" content="This is my personal portfolio, I am a developer" />
-  <meta name="keywords" content="Connor Kindall, Ranjan Portfolio" />
-  <title>Connor Kindall | My Work | Game Developer and Designer, Web Developer, Digital Creator</title>
-
-  <!-- Modal CSS (if not placed in your main.css) -->
-  <style>
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .modal-content {
-      background: #fff;
-      margin: 10% auto;
-      padding: 20px;
-      width: 80%;
-      max-width: 500px;
-      position: relative;
-      border-radius: 5px;
-    }
-
-    #close {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      cursor: pointer;
-      font-size: 24px;
-    }
-
-    /* Ensure images and videos inside the modal resize properly */
-    #modal-description img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    #modal-description iframe {
-      width: 100%;
-      aspect-ratio: 16/9;
-      display: block;
-      border: none;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Header -->
-  <header id="header-inner">
-    <div class="container">
-      <nav id="main-nav">
-        <h1>CK</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html" class="current">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Section A: Gallery -->
-  <section id="work-a" class="text-center py-3">
-    <div class="container">
-      <h2 class="section-title">My Work</h2>
-      <div class="bottom-line"></div>
-      <p class="lead">Check out some of my projects</p>
-      <div class="items">
-        <!-- Chase the Moon (plain description) -->
-        <div class="item"
-          data-description="Chase the Moon is a VR Rogue-Lite set in the clouds above Earth. I developed this game from the ground up using Unity and C#. In Chase the Moon, players find themselves battling the Moon Monk and their minions using a wand and spellbook. The game leverages gesture recognition for casting spells and features a nearly fully diegetic UI. Designed to be punishing yet fair, the mechanics require players to master dodging, blocking, and spell-casting to survive the Moon Monk's onslaught.">
-          <div class="item-image">
-            <img src="img/items/item1.png" alt="Chase The Moon" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">Chase The Moon</p>
-              <h2 class="item-text-title">VR Rogue-Like</h2>
-              <p class="item-text-category">Made in Unity (2023-24)</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- The Talking Stick (plain description) -->
-        <div class="item"
-          data-description="The Talking Stick thrusts players into an eerie, high-stakes environment where the simple act of speaking can be both a blessing and a curse. Upon entering each level, players find their voices stripped away—unable to speak unless they locate the elusive Talking Stick. However, this powerful artifact comes with a risk: making noise can attract the predatory entities that stalk the darkness. Key Themes & Mechanics: Silenced Communication, Sound-Attracted Monsters, Puzzle & Survival Blend. Developed in Unreal Engine with Blueprint systems for puzzle logic and AI pathfinding.">
-          <div class="item-image">
-            <img src="img/items/item2.png" alt="The Talking Stick" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">The Talking Stick</p>
-              <h2 class="item-text-title">Co-op Horror Puzzle Game</h2>
-              <p class="item-text-category">Made in Unreal (2024-25)</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Entangled (plain description) -->
-        <div class="item"
-          data-description="Entangled is a captivating story where love defies the laws of time and space, while also making the concept of quantum entanglement easy to understand. This interactive comic book takes you on a cosmic journey following the lives of two shape-like characters.">
-          <div class="item-image">
-            <img src="img/items/item3.png" alt="Entangled" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">Entangled</p>
-              <h2 class="item-text-title">Interactive Comic</h2>
-              <p class="item-text-category">Made in Unity (Spring 2023)</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hulu Redesign (plain description) -->
-        <div class="item"
-          data-description="Hulu Redesign showcases my UX/UI design skills. This project reimagines Hulu's interface for a cleaner, more engaging user experience (Fall 2023).">
-          <div class="item-image">
-            <img src="img/items/item4.png" alt="Hulu Redesign" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">Hulu Redesign</p>
-              <h2 class="item-text-title">UX/UI Design</h2>
-              <p class="item-text-category">(Fall 2023)</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Raven (rich description with embedded media) -->
-        <div class="item" data-description='<p>Raven was my first dive into game-making. With Unity and C#, I cooked up this 2D platformer starring Raven the cat. 
-          The player leaps between giant cat trees &amp; moving cloud-platforms while collecting fish. I dreamed up and created this pixelated adventure myself. 
-          Games like Celeste and Ori inspired me to make a movement system that felt buttery, but with some mechanics that felt fun to learn and difficult to master.
-          I created every asset from scratch in Photoshop. The trailer was an assignment for an audio/video class where we made our first-ever games look convincingly fun. 
-          Raven isn&apos;t just a game; it&apos;s the spark that lit my passion for digital creation.</p>
-          <p>Watch the trailer below:</p>
-          <iframe src="https://www.youtube.com/embed/N35mHnPBYO8" title="Raven Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Here is an example image of in-game action:</p>
-          <img src="img/items/raven_action.png" alt="Raven In-Game Action" />'>
-          <div class="item-image">
-            <img src="img/items/item5.png" alt="Raven" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">Raven</p>
-              <h2 class="item-text-title">2D Platformer</h2>
-              <p class="item-text-category">First game-dev experience (Fall 2022)</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- AWS Alexa App (plain description) -->
-        <div class="item"
-          data-description="AWS Alexa App is an interactive voice-controlled project using the Alexa development platform (Fall 2024).">
-          <div class="item-image">
-            <img src="img/items/item6.png" alt="AWS Alexa App" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">AWS Alexa App</p>
-              <h2 class="item-text-title">Using Alexa Dev</h2>
-              <p class="item-text-category">(Fall 2024)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Modal Markup -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span id="close">&times;</span>
-      <div id="modal-description"></div>
-    </div>
-  </div>
-
-  <!-- Section B: Progress Bars -->
-  <section id="about-b" class="bg-dark py-3">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="bottom-line"></div>
-      <h4>Unity</h4>
-      <div class="progress">
-        <div style="width: 100%"></div>
-      </div>
-      <h4>Unreal Engine</h4>
-      <div class="progress">
-        <div style="width: 85%"></div>
-      </div>
-      <h4>C#/C++</h4>
-      <div class="progress">
-        <div style="width: 75%"></div>
-      </div>
-      <h4>Full Stack</h4>
-      <div class="progress">
-        <div style="width: 70%"></div>
-      </div>
-      <h4>Adobe Suite</h4>
-      <div class="progress">
-        <div style="width: 90%"></div>
-      </div>
-      <h4>Database Management</h4>
-      <div class="progress">
-        <div style="width: 70%"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="main-footer">
-    <div class="footer-content container">
-      <div class="social">
-        <a href="https://www.linkedin.com/in/connor-kindall/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Killerconman311"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Attach click event to each item to open the modal with its rich description.
-    document.querySelectorAll('.item').forEach(function (item) {
-      item.addEventListener('click', function () {
-        var content = this.getAttribute('data-description');
-        document.getElementById('modal-description').innerHTML = content;
-        document.getElementById('modal').style.display = 'block';
-      });
-    });
-
-    // Close the modal when the close button is clicked.
-    document.getElementById('close').addEventListener('click', function () {
-      document.getElementById('modal').style.display = 'none';
-    });
-
-    // Close the modal if the user clicks outside the modal content.
-    window.addEventListener('click', function (event) {
-      var modal = document.getElementById('modal');
-      if (event.target === modal) {
-        modal.style.display = 'none';
+    <!-- Modal CSS (if not placed in your main.css) -->
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
       }
-    });
-  </script>
-</body>
+      .modal-content {
+        background: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        position: relative;
+        border-radius: 5px;
+      }
+      #close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 24px;
+      }
+      /* Ensure images and videos inside the modal resize properly */
+      #modal-description img {
+        max-width: 100%;
+        height: auto;
+      }
+      #modal-description iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: block;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <h1>CK</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" class="current">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <!-- Section A: Gallery -->
+    <section id="work-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">My Work</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Check out some of my projects</p>
+        <div class="items">
+          <!-- Chase the Moon (plain description with a placeholder for an image link) -->
+          <div class="item"
+            data-description='
+              <h2>OverView</h2>
+              <p>Chase the Moon is a VR Rogue-Lite set in the clouds above Earth. I developed this game from the ground up using Unity and C#. In Chase the Moon, 
+                players find themselves battling the Moon Monk and their minions using a wand and spellbook. The game leverages gesture recognition for casting spells 
+                and features a nearly fully diegetic UI. Designed to be punishing yet fair, the mechanics require players to master dodging, blocking, and spell-casting
+                 to survive the Moon Monk&apos;s onslaught.</p>
+                 <iframe src="https://www.youtube.com/embed/kKAhgdw05Nw" title="Chase the Moon Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+              picture-in-picture" allowfullscreen></iframe>
+              <h2>Key Features</h2>
+              <p>-Object Pooling to maximize performance on Occulus</p>
+              <p>-Gesture recognition for spellcasting</p>
+              <p>-Varried Enemy Accuracy</p>
+              <p>-Every asset in the game is made by me via Maya and Substance Painter (outside of the skybox and moon.) </p>
+              <p>-Diagetic UI via health indactor on wand, spell book instead of spell menu etc</p>
+              <img src="img\gifs\WandLife.gif" alt="Diagetic health example" />
+
+              
+            '>
+            <div class="item-image">
+              <img src="img/items/item1.png" alt="Chase The Moon" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Chase The Moon</p>
+                <h2 class="item-text-title">VR Rogue-Like</h2>
+                <p class="item-text-category">Made in Unity (2023-24)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- The Talking Stick (plain description with a placeholder for a link) -->
+          <div class="item"
+            data-description='
+              <p>The Talking Stick thrusts players into an eerie, high-stakes environment where the simple act of speaking can be both a blessing and a curse. Upon entering each level,
+                 players find their voices stripped away—unable to speak unless they locate the elusive Talking Stick. However, this powerful artifact comes with a risk: making noise can
+                  attract the predatory entities that stalk the darkness.</p>
+              <p>Key Themes &amp; Mechanics: Silenced Communication, Sound-Attracted Monsters, Puzzle &amp; Survival Blend. Developed in Unreal 
+                Engine with Blueprint systems for puzzle logic and AI pathfinding.</p>
+              <p>Additional Link Placeholder: <a href="https://example.com/talking-stick" target="_blank">Learn more about The Talking Stick</a></p>
+            '>
+            <div class="item-image">
+              <img src="img/items/item2.png" alt="The Talking Stick" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">The Talking Stick</p>
+                <h2 class="item-text-title">Co-op Horror Puzzle Game</h2>
+                <p class="item-text-category">Made in Unreal (2024-25)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Entangled (plain description with a placeholder for an image link) -->
+          <div class="item"
+            data-description='
+              <p>Entangled is a captivating story where love defies the laws of time and space—offering not only a narrative of romance but also a simple, 
+                engaging explanation of quantum entanglement. Born from a sophomore year assignment, the project emerged from our deep dive into the mysteries of physics, 
+                augmented by insights from Scott McCloud’s Understanding Comics, 
+                which helped shape our interactive approach to storytelling. Dive in and discover a world where science and heart are inseparably intertwined </p>
+              <p>Additional Image Placeholder: <img src="img/placeholders/entangled_placeholder.png" alt="Entangled Extra" /></p>
+              <iframe src="https://www.youtube.com/embed/h_T7lUBjLIk" title="Chase the Moon Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+              picture-in-picture" allowfullscreen></iframe>
+            '>
+            <div class="item-image">
+              <img src="img/items/item3.png" alt="Entangled" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Entangled</p>
+                <h2 class="item-text-title">Interactive Comic</h2>
+                <p class="item-text-category">Made in Unity (Spring 2023)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Hulu Redesign (plain description with a placeholder for a link) -->
+          <div class="item"
+            data-description='
+              <p>Hulu Redesign showcases my UX/UI design skills. This project reimagines Hulu&apos;s interface for a cleaner, more engaging user experience (Fall 2023).</p>
+              <p>Additional Link Placeholder: <a href="https://example.com/hulu-redesign" target="_blank">View Hulu Redesign Details</a></p>
+            '>
+            <div class="item-image">
+              <img src="img/items/item4.png" alt="Hulu Redesign" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Hulu Redesign</p>
+                <h2 class="item-text-title">UX/UI Design</h2>
+                <p class="item-text-category">(Fall 2023)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Raven (rich description with embedded video and image placeholders) -->
+          <div class="item"
+            data-description='
+              <p>Raven was my first dive into game-making. With Unity and C#, I cooked up this 2D platformer starring Raven the cat. The player leaps between giant cat trees &amp; 
+                moving cloud-platforms while collecting fish. I dreamed up and created this pixelated adventure myself. Games like Celeste and Ori inspired me to make a movement system 
+                that felt buttery, but with some mechanics that felt fun to learn and difficult to master. I created every asset from scratch in Photoshop. The trailer was an assignment
+                 for an audio/video class where we made our first-ever games look convincingly fun. Raven isn&apos;t just a game; it&apos;s the spark that lit my passion for digital 
+                 creation.</p>
+              <p>Watch the trailer below:</p>
+              <iframe src="https://www.youtube.com/embed/N35mHnPBYO8" title="Raven Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+              picture-in-picture" allowfullscreen></iframe>
+              <p>Additional Image Placeholder: <img src="img/placeholders/raven_placeholder.png" alt="Raven Extra" /></p>
+            '>
+            <div class="item-image">
+              <img src="img/items/item5.png" alt="Raven" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Raven</p>
+                <h2 class="item-text-title">2D Platformer</h2>
+                <p class="item-text-category">First game-dev experience (Fall 2022)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- AWS Alexa App (plain description with a placeholder for a link) -->
+          <div class="item"
+            data-description='
+              <p>AWS Alexa App is an interactive voice-controlled project using the Alexa development platform (Fall 2024).</p>
+              <p>Additional Link Placeholder: <a href="https://example.com/aws-alexa" target="_blank">Explore AWS Alexa App Details</a></p>
+            '>
+            <div class="item-image">
+              <img src="img/items/item6.png" alt="AWS Alexa App" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">AWS Alexa App</p>
+                <h2 class="item-text-title">Using Alexa Dev</h2>
+                <p class="item-text-category">(Fall 2024)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Markup -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+        <div id="modal-description"></div>
+      </div>
+    </div>
+
+    <!-- Section B: Progress Bars -->
+    <section id="about-b" class="bg-dark py-3">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="bottom-line"></div>
+        <h4>Unity</h4>
+        <div class="progress">
+          <div style="width: 100%"></div>
+        </div>
+        <h4>Unreal Engine</h4>
+        <div class="progress">
+          <div style="width: 85%"></div>
+        </div>
+        <h4>C#/C++</h4>
+        <div class="progress">
+          <div style="width: 75%"></div>
+        </div>
+        <h4>Full Stack</h4>
+        <div class="progress">
+          <div style="width: 70%"></div>
+        </div>
+        <h4>Adobe Suite</h4>
+        <div class="progress">
+          <div style="width: 90%"></div>
+        </div>
+        <h4>Database Management</h4>
+        <div class="progress">
+          <div style="width: 70%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/connor-kindall/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Killerconman311"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Attach click event to each item to open the modal with its rich description.
+      document.querySelectorAll(".item").forEach(function(item) {
+        item.addEventListener("click", function() {
+          var content = this.getAttribute("data-description");
+          document.getElementById("modal-description").innerHTML = content;
+          document.getElementById("modal").style.display = "block";
+        });
+      });
+
+      // Close the modal when the close button is clicked.
+      document.getElementById("close").addEventListener("click", function() {
+        document.getElementById("modal").style.display = "none";
+      });
+
+      // Close the modal if the user clicks outside the modal content.
+      window.addEventListener("click", function(event) {
+        var modal = document.getElementById("modal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
 </html>
