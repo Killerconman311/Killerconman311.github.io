@@ -162,10 +162,14 @@ input[class^='btn-']:hover {
 }
 
 .item-image {
-  height: auto;
+  height: 100%;
+  width: 100%;
   transform: translateZ(0);
+  overflow: hidden;
   display: block;
   transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+  
+
 }
 
 .item-image:before {
@@ -176,12 +180,12 @@ input[class^='btn-']:hover {
 }
 
 .item-image img {
-  position: absolute;
+  position: absolute;       /* Position absolutely within .item-image */
   top: 0;
   left: 0;
-  width: 100%;
-  height: auto;
-  line-height: 0;
+  width: 100%;              /* Fill the container's width */
+  height: 100%;             /* Fill the container's height */
+  object-fit: cover;        /* Crop image to fill container without distortion */
 }
 
 .item-text {
