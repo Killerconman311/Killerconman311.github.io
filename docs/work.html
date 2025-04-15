@@ -87,13 +87,50 @@
       <div class="bottom-line"></div>
       <p class="lead">Check out some of my projects</p>
       <div class="items">
+        <!-- The Talking Stick (plain description with a placeholder for a link) -->
+        <div class="item" data-description='
+              <h2>OverView</h2>
+              <p>The Talking Stick thrusts players into an eerie, high-stakes environment where the simple act of speaking can be both a blessing and a curse. Upon entering each level,
+                 players find their voices stripped away and unable to speak unless they locate the elusive Talking Stick. However, this powerful artifact comes with a risk: making noise can
+                attract the predatory entities that stalk the darkness. We love multiplayer games that keep players on edge while still offering space for laughter and absurd stories, 
+                and we aim to recreate that experience here. The Talking Stick is still in development in Unreal Engine. </p>
+                <h2>Key Features</h2>
+                <p>Players must use items selected in the pregame lobby map (number cards, color swatches, laser pointers etc.) to come up with unique ways to 
+                  communicate with eachother in order to solve puzzles and escape the level.</p>  
+                <img src="img\gear wall.jpg" alt="Gear Wall" />
+                <p> Other items can help players get out of sticky situations. For example, the sound-nade can be thrown to distract the monster that prowls the first level, 
+                  giving players a chance to escape. However, players cannot damage or kill the monster, and that is by design. We wanted to avoid the common fallback of combat in games, 
+                  encouraging players to think creatively instead of relying on brute force.</p> 
+                <img src="img\gifs\SoundNade.gif" alt="Sound-nade in game vs testing" />
+                <p> Our (currently unamed) monster searches the level with precise hearing, but is very short sighted. Players have a small health pool, meaning that getting caught
+                  isn&#39;t an immediate death sentence. Players can change their walking speed to silence their steps, and use the environment to lose the monster.</p>
+                  <img src="img\gifs\levels_1.gif" alt="Monster" />
+                <p> Upon designing our playspace, myself and my co-level-designer, Alin, wanted to create an atmosphere of eerie intrigue. Environmental story telling is a powerful tool,
+                  and we love games that trust their players to piece together the story through exploration. </p>
+                <img src="img\gifs\LevelsLowFrame.gif" alt="Level Design" />
+                <p> If players are able to correctly order the puzzle pieces by sifting throw symbols and colors, they will safely escape and be permitted to venture deeper into this 
+                  strange facility. </p>
+                  <img src="img/gifs/puzzles.gif" alt="Level Design" />
+
+            '>
+          <div class="item-image">
+            <img src="img/items/item2.png" alt="The Talking Stick" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">The Talking Stick</p>
+              <h2 class="item-text-title">Co-op Horror Puzzle Game</h2>
+              <p class="item-text-category">Made in Unreal (2024-25)</p>
+            </div>
+          </div>
+        </div>
         <!-- Chase the Moon (plain description with a placeholder for an image link) -->
         <div class="item" data-description='
               <h2>OverView</h2>
               <p>Chase the Moon is a VR Rogue-Lite set in the clouds above Earth. I developed this game from the ground up using Unity and C#. In Chase the Moon, 
                 players find themselves battling the Moon Monk and their minions using a wand and spellbook. The game leverages gesture recognition for casting spells 
                 and features a nearly fully diegetic UI. Designed to be punishing yet fair, the mechanics require players to master dodging, blocking, and spell-casting
-                 to survive the Moon Monk&apos;s onslaught.</p>
+                 to survive the Moon Monk&apos;s onslaught. Chase the Moon is currently being converted from VR to a standard first person in Unity.</p>
                  <iframe src="https://www.youtube.com/embed/yoNzyyVK4N4" title="Chase the Moon Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
               picture-in-picture" allowfullscreen></iframe>
               <h2>Key Features</h2>
@@ -118,25 +155,6 @@
           </div>
         </div>
 
-        <!-- The Talking Stick (plain description with a placeholder for a link) -->
-        <div class="item" data-description='
-              <h2>OverView</h2>
-              <p>The Talking Stick thrusts players into an eerie, high-stakes environment where the simple act of speaking can be both a blessing and a curse. Upon entering each level,
-                 players find their voices stripped away—unable to speak unless they locate the elusive Talking Stick. However, this powerful artifact comes with a risk: making noise can
-                attract the predatory entities that stalk the darkness.</p>  
-              <p>Additional Link Placeholder: <a href="https://example.com/talking-stick" target="_blank">Learn more about The Talking Stick</a></p>
-            '>
-          <div class="item-image">
-            <img src="img/items/item2.png" alt="The Talking Stick" />
-          </div>
-          <div class="item-text">
-            <div class="item-text-wrap">
-              <p class="item-text-category">The Talking Stick</p>
-              <h2 class="item-text-title">Co-op Horror Puzzle Game</h2>
-              <p class="item-text-category">Made in Unreal (2024-25)</p>
-            </div>
-          </div>
-        </div>
 
         <!-- Entangled (plain description with a placeholder for an image link) -->
         <div class="item" data-description='
@@ -289,12 +307,12 @@
     </div>
   </section>
   <!-- Modal Markup -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="close">&times;</span>
-    <div id="modal-description"></div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <div id="modal-description"></div>
+    </div>
   </div>
-</div>
 
   <!-- Footer -->
   <footer id="main-footer">
